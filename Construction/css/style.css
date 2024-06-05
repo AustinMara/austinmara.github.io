@@ -1,0 +1,9 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    background-color: #0d6986;
+    background-image: url(../images/WIP.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    align-items: center;
+}
