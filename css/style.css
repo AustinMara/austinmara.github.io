@@ -30,6 +30,7 @@ header{
     /* position: absolute; */
     grid-template-columns: repeat(7, 1fr);
     position: fixed;
+    z-index: 5;
 }
 
 nav{
@@ -114,11 +115,27 @@ main{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    z-index: 0;
+    z-index: -1;
     display: flex;
     
-    
 }
+.banner:hover{
+    /* cursor: none; */
+}
+
+
+
+#rocket{
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+
+}
+#rocket img{
+    width: 32px;
+    height: 32px;
+}
+
 #particles-js{
     /* z-index: 0; */
     width: 100%;
@@ -126,8 +143,8 @@ main{
     background-size: cover;
     background-color: rgba(0, 0, 0, 0);
     background-image: url("");
-    background-position: 50% 50%;
-    z-index: 1;
+    background-position: 50% 50%;z-index: 1;
+    
 }
 
 .particles-js-canvas-el{
@@ -136,9 +153,11 @@ main{
 }
 .banner h1{
     width: 100%;
+    height: 100%;
     margin: 1px;
+    padding: 5vw;
     display: flex;
-    
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -147,7 +166,7 @@ main{
     font-size: 4em;
     font-weight: 700;
     color: #76abae;
-    z-index: 2;
+    z-index: 0;
 }
 .banner-wrapper{
     position: relative;
